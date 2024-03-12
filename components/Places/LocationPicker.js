@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primary100,
     borderRadius: 4,
     overflow: "hidden",
+    overflow: "hidden",
   },
   actions: {
     flexDirection: "row",
