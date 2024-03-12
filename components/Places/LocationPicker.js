@@ -1,5 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import OutlinedButton from "../UI/OutlinedButton";
+import { Colors } from "../../constants/colors";
 
 const LocationPicker = () => {
   function getLocationHandler() {}
