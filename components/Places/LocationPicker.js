@@ -6,11 +6,10 @@ import {
   PermissionStatus,
 } from "expo-location";
 
-import { GOOGLE_API_KEY } from "@env";
-
 import { Colors } from "../../constants/colors";
 import OutlinedButton from "../UI/OutlinedButton";
 import { getMapPreview } from "../../util/location";
+import { useNavigation } from "@react-navigation/native";
 
 const LocationPicker = () => {
   const [pickedLocation, setPickedLocation] = useState();
@@ -52,7 +51,11 @@ const LocationPicker = () => {
     });
   }
 
-  function pickOnMapHandler() {}
+  const navigation = useNavigation();
+
+  function pickOnMapHandler() {
+    navigation.navigate("Map");
+  }
 
   let locationPreview = <Text>No location picked yet.</Text>;
 
