@@ -1,4 +1,4 @@
-import { Pressable, View } from "react-native";
+import { Pressable, View, Image, Text } from "react-native";
 
 const PlaceItem = ({ place, onSelect }) => {
   return (
